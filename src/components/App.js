@@ -20,7 +20,7 @@ function App() {
 
   return (
     <div className="app">
-      <Header  setFilter={setFilter} listings={listings} />
+      <Header  setFilter={setFilter} listings={listings} setListings={setListings} />      
       <ListingsContainer listings={listings.filter(listing => listing.description.toLowerCase().includes(filter.toLowerCase()))} removeListing={removeListing} />
     </div>
   );
